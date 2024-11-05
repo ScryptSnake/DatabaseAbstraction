@@ -21,6 +21,6 @@ public interface IOrderRepository{
     public SalesOrder GetOrder(long id);
     public Task<SalesOrder> GetOrderAsync(long id);
 
-    public SalesOrder UpdateOrder(SalesOrder location);
-    public Task<SalesOrder> UpdateOrderAsync(SalesOrder location);
+    public SalesOrder UpdateOrder(SalesOrder order);
+    public Task<SalesOrder> UpdateOrderAsync(SalesOrder order);
 }
