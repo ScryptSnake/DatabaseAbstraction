@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccess;
 using Microsoft.Data.Sqlite;
 
 namespace CashMapper.DataAccess

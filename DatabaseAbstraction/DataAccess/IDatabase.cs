@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CashMapper.DataAccess
+namespace DataAccess
 {
     /// <summary>
     /// Defines a contract for a Database.

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using CashMapper.DataAccess;
+using DataAccess;
 using DatabaseAbstraction.DataAccess;
 using DatabaseAbstraction.Entities;
 
@@ -44,7 +44,6 @@ public sealed class OrderRepository: IOrderRepository
         var db = await GetDatabaseTask;
         // Perform a GetAsync operation with the DB, by passing the implementation method to the DB. 
         return await db.GetAsync(CreateOrderAsyncImplementation, newOrder);
-
     }
 
     private static async  Task<SalesOrder> CreateOrderAsyncImplementation(IDbConnection connection, SalesOrder newOrder)
